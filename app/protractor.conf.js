@@ -2,14 +2,14 @@ exports.config = {
 
     allScriptsTimeout: 11000,
 
-    //   specs: [
-    //     'test-e2e/**/*.js'
-    //   ],
+    specs: [
+        'test-e2e/**/*.js'
+    ],
 
-    suites: {
-        home: 'test-e2e/home.test.js',
-        full: 'test-e2e/**/*.test.js'
-    },
+    // suites: {
+    //     home: 'test-e2e/home.test.js',
+    //     full: 'test-e2e/**/*.test.js'
+    // },
 
     capabilities: {
         browserName: 'chrome'
@@ -19,9 +19,11 @@ exports.config = {
 
     baseUrl: 'http://localhost:8080',
 
-    framework: 'jasmine',
+    // framework: 'jasmine',
 
-    jasmineNodeOpts: {
-        defaultTimeoutInterval: 30000
-    }
+    // jasmineNodeOpts: {
+    //     defaultTimeoutInterval: 30000
+    // }
+
+    framework: 'jasmine'
 };

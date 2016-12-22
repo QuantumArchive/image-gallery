@@ -12,7 +12,7 @@ export default {
 function controller() {
     this.styles = styles;
 
-    this.uiOnParamsChanged = params => {
-        this.view = params.view;
-    };
+    // this.uiOnParamsChanged = params => {
+    //     this.view = params.view;
+    // };
 };

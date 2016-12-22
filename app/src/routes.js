@@ -38,6 +38,9 @@ export default function routes($stateProvider, $urlRouterProvider) {
         },
         views: {
             main: {
+                component: 'albumApp'
+            },
+            submain: {
                 component: 'album'
             }
         }

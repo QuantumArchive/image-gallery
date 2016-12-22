@@ -18,7 +18,7 @@ function controller() {
     };
     
     this.addNewAlbum = () => {
-        this.addalbum({
+        this.addAlbum({
             name: this.name
         });
         this.reset();
