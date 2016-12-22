@@ -23,5 +23,21 @@ describe('ui testing of my gallery app', () => {
             expect(welcome.url).toBe('/albums');
             expect(welcome.stateComponent).toEqual('album-app');
         });
+        
+        it('default to welcome page and navigate to images then about', () => {
+            expect(welcome.url).toBe('/');
+            expect(welcome.stateComponent).toEqual('welcome');
+
+            welcome.goToImages();
+
+            expect(welcome.url).toBe('/images/detail');
+            expect(welcome.stateComponent).toEqual('image-app');
+
+            welcome.goToAbout();
+
+            expect(welcome.url).toBe('/about');
+            expect(welcome.stateComponent).toEqual('about');
+        });
     });
+    //welcome: welcome, albums: albumApp, images: imageApp, about: about 
 });

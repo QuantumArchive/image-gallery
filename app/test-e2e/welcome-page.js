@@ -14,6 +14,8 @@ var WelcomePage = function () {
 
         var nav = element.all(by.css('nav a'));
         this.aAlbums = nav.get(1);
+        this.aImages = nav.get(2);
+        this.aAbout = nav.get(3);
         this.uiView = element.all(by.css('main ui-view'));
         this.uiViewMain = this.uiView.get(0);
         this.uiViewSubMain = this.uiView.get(1);
@@ -28,6 +30,16 @@ var WelcomePage = function () {
         key: 'goToGallery',
         value: function goToGallery() {
             this.aAlbums.click();
+        }
+    }, {
+        key: 'goToImages',
+        value: function goToImages() {
+            this.aImages.click();
+        }
+    }, {
+        key: 'goToAbout',
+        value: function goToAbout() {
+            this.aAbout.click();
         }
     }, {
         key: 'title',
