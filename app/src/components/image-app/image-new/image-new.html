@@ -16,8 +16,8 @@
         </div>
         <div>
             <h4>Album:</h4>
-            <div ng-if="!$ctrl.albums">{{$ctrl.album}}</div> 
-            <select ng-if="$ctrl.albums" ng-options="album.name for album in $ctrl.albums" 
+            <div ng-if="$ctrl.album">{{$ctrl.album}}</div> 
+            <select ng-if="!$ctrl.album" ng-options="album.name as album.name for album in $ctrl.albums" 
                     ng-model="$ctrl.category" 
                     required>
             </select>

@@ -30,7 +30,7 @@ function controller() {
             title : this.title,
             description: this.description,
             url: this.url,
-            category: this.album,
+            category: this.album || this.category,
         });
         this.reset();
     }; 
